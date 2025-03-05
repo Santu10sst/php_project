@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost/project/home/home.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index_files/home.css">
+
+    <title>Time Spend</title>
+</head>
+
+<body>
+    
+
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2c3e50;
+            /* Dark blue-gray */
+            padding: 15px 30px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 70px;
+            border-bottom: 2px solid black;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        /* Left side (Profile Image & Username) */
+        .left-side {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Profile Image */
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            /* Makes it circular */
+            object-fit: cover;
+            /* Ensures proper scaling */
+            border: 2px solid white;
+        }
+
+        /* Username Text */
+        .left-side span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .right-side {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .right-side .profile {
+            position: relative;
+        }
+
+        .right-side .profile-details {
+            position: absolute;
+            color: #2c3e50;
+            padding: 1rem 0rem;
+            left: -100px;
+            top: 2rem;
+            border-radius: .5rem;
+            background-color: rgb(239, 243, 252);
+            display: none;
+            min-width: 150px;
+            z-index: 10;
+            cursor: pointer;
+
+        }
+
+        .right-side .profile-details button {
+            width: 100%;
+            padding: .5rem 0rem;
+            margin-bottom: .5rem;
+            outline: none;
+            border-left: none;
+            border-right: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .right-side .profile-details button:hover {
+            background-color: #4e5b67;
+            color: white;
+        }
+
+        .right-side .profile:hover .profile-details {
+            display: block;
+        }
+
+        .right-side .profile img {
+            width: 3rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Right side (Logout Button) */
+        .right-side .logout-btn {
+            background: #e74c3c;
+            /* Red color */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        .right-side .logout-btn:hover {
+            background: #c0392b;
+            /* Darker red on hover */
+        }
+
+        .request img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .request {
+            position: relative;
+        }
+    </style>
+
+<nav class="navbar">
+    <div class="left-side">
+        <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="profile-img" class="logo">
+        <span>Santu</span>
+    </div>
+
+    <div class="right-side">
+    <div class="request">
+                            <a href="http://localhost/project/home/messageListPage.php" style="text-decoration: none;">
+                    <button style="background-color: transparent; outline:none;border:none;">
+
+                            <p style="position: absolute; right:0; color:white; background-color:red; border-radius:50%;padding:.3rem">  3</p>                         
+                        <img src="./index_files/messagebox.png" alt="icon image" style="width:40px; border-radius:5%">
+                    </button>
+                </a>
+
+
+                    </div>
+        <div class="request">
+                            <a href="http://localhost/project/home/friendRequestPage.php" style="text-decoration: none;">
+                    <button style="background-color: transparent; outline:none;border:none;">
+                        <p style="position: absolute; right:0; color:white; background-color:red; border-radius:50%;padding:.3rem">0</p>
+                        <img src="./index_files/friend_request1.png" alt="icon image">
+                    </button>
+                </a>
+
+
+                    </div>
+        <div class="profile">
+
+            <img src="./index_files/download.png" alt="icon image">
+            <div class="profile-details">
+                <a href="http://localhost/project/controller/profile_actions.php?action=update_profile">
+                <button>Update Profile</button>
+                </a>
+
+                <a href="http://localhost/project/controller/profile_actions.php?action=change_password">
+                <button>Password Change</button>
+                </a>
+            </div>
+
+        </div>
+
+        <form action="http://localhost/project/controller/logout.controller.php">
+            <button class="logout-btn">Logout</button>
+        </form>
+    </div>
+</nav>    <div class="main-container">
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=3" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">Santu</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            dfgd</h2>
+                        <p class="desc">
+                            dgfg                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6ed3660fea4.28482893.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=4" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c56ca3e681d7.11876376.png" alt="User Avatar" class="avatar">
+                                <span class="username">jay@123</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            upload a image</h2>
+                        <p class="desc">
+                            image                         </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6ce683d5d58.48238471.avif" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=7" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c6c0cde556a9.12960915.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">kunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            tyu</h2>
+                        <p class="desc">
+                            ghgjgj                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6cd1032c747.28014884.avif" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=7" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c6c0cde556a9.12960915.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">kunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            tyu</h2>
+                        <p class="desc">
+                            ghgjgj                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6cd08529e17.99201305.avif" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=7" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c6c0cde556a9.12960915.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">kunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            ertt</h2>
+                        <p class="desc">
+                            rettr                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6cbd57af2a6.30329103.avif" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=7" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c6c0cde556a9.12960915.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">kunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            sdfd</h2>
+                        <p class="desc">
+                            gdd                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6cbbcc44470.98789279.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=7" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c6c0cde556a9.12960915.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">kunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            dssdd</h2>
+                        <p class="desc">
+                            sdsds                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6cb9db890c6.48549539.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=7" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c6c0cde556a9.12960915.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">kunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            sdf</h2>
+                        <p class="desc">
+                            sdfsdfdf                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6cb8b3017e7.04023312.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=3" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">Santu</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            fghfhh</h2>
+                        <p class="desc">
+                            fghhfg                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6cb6fccdad9.93387520.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=3" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">Santu</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            sedfsd</h2>
+                        <p class="desc">
+                            fdsfd                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6c715abc168.49091096.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=3" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">Santu</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            fghfh</h2>
+                        <p class="desc">
+                            fhfhfhhf                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6c35f0ccec5.29545497.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=3" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">Santu</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            sedfsf</h2>
+                        <p class="desc">
+                            sfds                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6c33a408585.06260447.png" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=3" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">Santu</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            dfsd</h2>
+                        <p class="desc">
+                            sdfdff                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6c307dc7b23.57383139.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=3" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c7fc5b0ad788.05306365.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">Santu</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            er</h2>
+                        <p class="desc">
+                            rtyry                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6c2bc60aaf2.49114259.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=7" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c6c0cde556a9.12960915.jpg" alt="User Avatar" class="avatar">
+                                <span class="username">kunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            fdgfdg</h2>
+                        <p class="desc">
+                            dfgdfgdfg                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c6c0a92dbf46.44822858.avif" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=6" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c5af2e211401.28300130.png" alt="User Avatar" class="avatar">
+                                <span class="username">sunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            fghfgh</h2>
+                        <p class="desc">
+                            fhh                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c5ac11f11518.68920900.jpg" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+                    <div class="home-container">
+                <div class="user-media">
+                    <div class="profile">
+                        <a href="http://localhost/project/home/profilePage.php?profileCheck=6" style="text-decoration: none;">
+                            <button style="border:none; outline:none;background:transparent;cursor:pointer; display:flex;align-items:center;gap:1rem; font-size:1.1rem ">
+                                <img src="./index_files/avatar_67c5af2e211401.28300130.png" alt="User Avatar" class="avatar">
+                                <span class="username">sunil</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="description">
+                        <h2 class="title">
+                            fggfd</h2>
+                        <p class="desc">
+                            ddgdfdf                        </p>
+                    </div>
+                    <div class="media">
+                        <img src="./index_files/file_67c59cefcda218.54861383.avif" alt="Media Image" class="media-content">                    </div>
+                </div>
+            </div>
+            </div>
+
+    
+    <style>
+        footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            border: 1px solid black;
+            width: 100%;
+            padding: 1rem 0rem;
+            background: #2c3e50;
+            color: white;
+            z-index: 10;
+        }
+
+        footer a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+        a img{
+            height: 30px;
+            border-radius: 20px;
+        }
+    </style>
+
+
+<footer>
+    <div class="left-side">
+        <a href="http://localhost/project/home/home.php">Home</a>
+    </div>
+    <div class="middle">
+        <a href="http://localhost/project/home/searchPage.php">
+            <img src="./index_files/search-btn.png" alt="">
+        </a>
+    </div>
+    <div class="middle">
+        <a href="http://localhost/project/home/CreatePost.php">create Post</a>
+    </div>
+    <div class="right-side">
+        <a href="http://localhost/project/home/profilePage.php">profile</a>
+    </div>
+</footer>
+
+
+</body></html>

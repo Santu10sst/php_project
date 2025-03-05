@@ -1,0 +1,172 @@
+body {
+    background: linear-gradient(to bottom right, #5A189A, #000000);
+    /* height: 100vh; */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    
+}
+form{
+    width:80%;
+    max-width: 500px;
+    background-color: rgb(15, 16, 16);
+    padding: 1rem .5rem;
+    border-radius: .5rem;
+    margin-top: 3rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: .2rem;
+}
+label{
+    color: aliceblue;
+    cursor: pointer;
+}
+input{
+    padding: .4rem;
+    outline: none;
+    cursor:text;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.1rem;
+    background-color: #3d3a3a;
+    color: #ddd;
+}
+#avatar{
+    cursor: pointer;
+}
+.box-gender{
+    display: block;
+    padding: .5rem;
+    color: white;
+}
+
+.box-gender span{
+    font-size: 1.2rem;
+    margin-bottom: .7rem;
+}
+.dob-qualification{
+    display:grid ;
+    /* align-items: center; */
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.box-list label{
+    background-color: #ddd;
+}
+.box textarea{
+    /* width: 90%; */
+    max-width: 390px;
+    padding: .4rem;
+    border-radius: .4rem;
+    background-color: #3d3a3a;
+    color: #ddd;
+    font-size: 1.2rem;
+    /* overflow: hidden;
+    resize: none; */
+}
+
+.hobbies {
+    max-width: 500px; 
+    margin: auto; 
+    padding:.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    margin-bottom: 1rem;;
+    color: #ddd;
+    background-color: #3d3a3a;
+    margin-top: .4rem;
+}
+
+.hobbies p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.hobbies-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.hobbies-item {
+    display: flex;
+    align-items: center;
+   /* justify-content: center; */
+}
+
+.hobbies label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(249, 247, 247);
+}
+.box select{
+    padding: .4rem;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit button{
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    background-color: rgb(35, 21, 191);
+    outline: none;
+    border: none;
+    color: #ddd;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 100%;
+}
+.another-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.another-page p{
+    color: white;
+}
+.another-page p a{
+    color: rgb(6, 44, 147);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: .5rem;
+}
+
+.hobbies span{
+    display: block;
+    color: red;
+}
+@media (max-width:500px) {
+    .hobbies-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+        gap: 10px;
+    }
+    
+}

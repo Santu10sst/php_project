@@ -1,0 +1,104 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+    height: 89vh;
+    overflow: scroll;
+    background-color: #f4f4f4;
+    padding-top: 1rem;
+    scrollbar-width: none;
+}
+.home-container {
+    width: 80%;
+    max-width: 700px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.user-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: bold;
+    flex-grow: 1;
+    
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.desc {
+    font-size: 14px;
+    color: #555;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.media {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.media video{
+    width: 100%;
+    /* height: 100%; */
+    max-width: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.media-content {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 400px;
+}
+
+

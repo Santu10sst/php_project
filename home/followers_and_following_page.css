@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 5rem;
+    left: 20px;
+}
+
+.back-btn button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* followers_id List */
+.followers_id-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.follower-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.follower-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.follower-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.follower-info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.follower-info p {
+    color: #666;
+    margin: 5px 0 0;
+}
+
+/* Buttons */
+.follow-btn, .unfollow-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.follow-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.follow-btn:hover {
+    background-color: #0056b3;
+}
+
+.unfollow-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.unfollow-btn:hover {
+    background-color: #b52a37;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+}

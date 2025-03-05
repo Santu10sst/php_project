@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(to bottom right, #1E1A3B, #000000);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #E5E7EB;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    background-color: #121826;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-top: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+label {
+    color: #E5E7EB;
+    font-weight: 600;
+}
+
+input {
+    padding: 0.6rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.1rem;
+    background-color: #2C2F33;
+    color: #E5E7EB;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.submit button {
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2563EB;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #E5E7EB;
+    width: 100%;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.submit button:hover {
+    background-color: #1E40AF;
+}
+
+.another-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.another-page p {
+    color: #E5E7EB;
+}
+
+.another-page p a {
+    color: #60A5FA;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+}
+
+.another-page p a:hover {
+    color: #3B82F6;
+}
